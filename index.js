@@ -27,12 +27,11 @@ const operations = {
 
 function reply_click(clicked_id) {
     if (flag == true) {
-        secondEl += second_click(clicked_id);
-        output.innerText += secondEl;
+        output.innerText += second_click(clicked_id);
     } else {
         let id = clicked_id;
+        console.log(firstEl);
         firstEl += numbers[id];
-        console.log(typeof(firstEl));
         output.innerText = firstEl;
     }
 }
@@ -46,12 +45,13 @@ function reply_operation_click(clicked_id) {
 
 function second_click(clicked_id) {
     let sec_id = clicked_id;
-    return numbers[sec_id];
+    secondEl += numbers[sec_id]
+    return secondEl;
 }
 
 function result() {
     if (operationEl == '+') {
-        output.innerText = +firstEl + secondEl
+        output.innerText = +firstEl + +secondEl
     } else if (operationEl == '-') {
         output.innerText = +firstEl - +secondEl
     } else if (operationEl == '*') {
