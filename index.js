@@ -26,11 +26,11 @@ const operations = {
 }
 
 function reply_click(clicked_id) {
+    id = clicked_id
     if (flag == true) {
-        output.innerText += second_click(clicked_id);
+        secondEl += numbers[id]
+        output.innerText += secondEl
     } else {
-        let id = clicked_id;
-        console.log(firstEl);
         firstEl += numbers[id];
         output.innerText = firstEl;
     }
@@ -41,12 +41,6 @@ function reply_operation_click(clicked_id) {
     operationEl = operations[id];
     flag = true;
     output.innerText = `${firstEl} ${operationEl} `;
-}
-
-function second_click(clicked_id) {
-    let sec_id = clicked_id;
-    secondEl += numbers[sec_id]
-    return secondEl;
 }
 
 function result() {
@@ -62,7 +56,7 @@ function result() {
     firstEl = output.innerText;
     flag = false;
     operationEl = '';
-    secondEl = NaN;
+    secondEl = '';
 }
 
 function reset(number) {
