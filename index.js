@@ -1,10 +1,10 @@
 let output = document.querySelector('#output');
 const numbersBtns = document.querySelector('#numbers');
 
-let firstEl = ''
-let operationEl = ''
-let secondEl = ''
-let flag = false
+let firstEl = '';
+let operationEl = '';
+let secondEl = '';
+let flag = false;
 
 const numbers = {
     'one': 1,
@@ -28,6 +28,9 @@ const operations = {
 function reply_click(clicked_id) {
     id = clicked_id
     if (flag == true) {
+        if (secondEl.length > 0) {
+            output.innerText = output.innerHTML.replace(secondEl, '')
+        }
         secondEl += numbers[id]
         output.innerText += secondEl
     } else {
