@@ -29,10 +29,10 @@ function reply_click(clicked_id) {
     id = clicked_id
     if (flag == true) {
         if (secondEl.length > 0) {
-            output.innerText = output.innerHTML.replace(secondEl, '')
+            output.innerText = output.innerHTML.replace(secondEl, '');
         }
-        secondEl += numbers[id]
-        output.innerText += secondEl
+        secondEl += numbers[id];
+        output.innerText += secondEl;
     } else {
         firstEl += numbers[id];
         output.innerText = firstEl;
