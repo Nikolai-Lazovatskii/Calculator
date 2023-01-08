@@ -1,10 +1,11 @@
 @import './reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;600;700;800&family=Montserrat:wght@400;500;600&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Martian Mono', sans-serif;
     height: 900px;
-    background-color: #34568b;
+    background-image: url("./../imgs/background.jpeg");
+    background-size: 100%;
     color: #0f1f1c;
 }
 
@@ -22,6 +23,8 @@ body {
     margin: auto;
     margin-top: 40px;
     text-align: center;
+
+    color: #f6f6f6;
 }
 
 .container {
@@ -29,7 +32,8 @@ body {
     height: 660px;
     margin: auto;
     margin-top: 70px;
-    padding-top: 60px;
+    padding-top: 80px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,18 +45,24 @@ body {
 }
 
 .info {
-    width: 400px;
-    height: 70px;
+    width: 480px;
+    height: 90px;
 
     color: #f6f6f6;
     background-color: #0f1f1c;
 
+    display: flex;
     text-align: center;
+    align-items: center;
 
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 600;
 
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border-radius: 10px;
 }
 
 .buttons {
@@ -85,6 +95,11 @@ body {
 
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Martian Mono', sans-serif;
+
+    background-color: #D8D8D8;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
 }
 
 .operations {
@@ -102,6 +117,11 @@ body {
 
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Martian Mono', sans-serif;
+
+    background-color: #D8D8D8;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
 }
 
 .result {
@@ -110,9 +130,12 @@ body {
 
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Martian Mono', sans-serif;
 
     color: #f6f6f6;
-    background-color: #34568b;
+    background-color: #F26A21;
+    border: 1px solid #F26A21;
+    border-radius: 10px;
 }
 
 .reset {
@@ -121,11 +144,24 @@ body {
 
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Martian Mono', sans-serif;
 
     color: #f6f6f6;
-    background-color: #8b3434;
+    background-color: #9D9D9C;
+    border: 1px solid #9D9D9C;
+    border-radius: 10px;
 }
 
 .zero {
     justify-content: space-around !important;
+}
+
+.name {
+    width: 480px;
+    height: 80px;
+
+    align-items: center;
+    
+    font-size: 18px;
+    font-weight: 300;
 }

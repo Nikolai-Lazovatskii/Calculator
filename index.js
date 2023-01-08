@@ -3,7 +3,7 @@ const numbersBtns = document.querySelector('#numbers');
 
 let firstEl = '';
 let operationEl = '';
-let secondEl = '';
+let secondEl = ' ';
 let flag = false;
 
 const numbers = {
@@ -43,7 +43,7 @@ function reply_operation_click(clicked_id) {
     let id = clicked_id;
     operationEl = operations[id];
     flag = true;
-    output.innerText = `${firstEl} ${operationEl} `;
+    output.innerText = `${firstEl}  ${operationEl}`;
 }
 
 function result() {
@@ -65,5 +65,5 @@ function result() {
 function reset(number) {
     output.innerText = '';
     firstEl = ''
-    secondEl = ''
+    secondEl = ' '
 }
