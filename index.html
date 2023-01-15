@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 class="title">Simple calculator</h1>
+    <div class="container">
+        <div class="info">
+            <h1 id="output"></h1>
+        </div>
+        
+        <div class="buttons">
+            <div class="numbers" id="'numbers">
+                <div class="row">
+                    <button class="btn" id="one" onClick="reply_click(this.id)">1</button>
+                    <button class="btn" id="two" onClick="reply_click(this.id)">2</button>
+                    <button class="btn" id="three" onClick="reply_click(this.id)">3</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="four" onClick="reply_click(this.id)">4</button>
+                    <button class="btn" id="five" onClick="reply_click(this.id)">5</button>
+                    <button class="btn" id="six" onClick="reply_click(this.id)">6</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="seven" onClick="reply_click(this.id)">7</button>
+                    <button class="btn" id="eight" onClick="reply_click(this.id)">8</button>
+                    <button class="btn" id="nine" onClick="reply_click(this.id)">9</button>
+                </div>
+                <div class="row zero">
+                    <button class="btn" id="zero" onClick="reply_click(this.id)">0</button>
+                </div>
+            </div>
+            <div class="operations">
+                <button class="operation" id="plus" onClick="reply_operation_click(this.id)">+</button>
+                <button class="operation" id="minus" onClick="reply_operation_click(this.id)">-</button>
+                <button class="operation" id="multiplication" onClick="reply_operation_click(this.id)">*</button>
+                <button class="operation" id="division" onClick="reply_operation_click(this.id)">÷</button>
+                <button class="result" id="result" onClick="result()">=</button>
+                <button class="reset" id="reset" onClick="reset()">C</button>
+            </div>
+        </div>
+        <h2 class="name">Simple calculator</h2>
+    </div>
+    <div class="theme">
+        <button class="theme-btn">
+            <img src="./imgs/sun-dark.png" alt="theme">
+        </button>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/ButtonsEvent.js"></script>
+    <script src="./js/theme.js"></script>
+</body>
+</html>
