@@ -9,6 +9,14 @@ body {
     color: #0f1f1c;
 }
 
+.image_1 {
+    background-image: url("./../imgs/background.jpeg");
+}
+
+.image_2 {
+    background-image: url("./../imgs/background2.jpg");
+}
+
 .none {
     display: none !important;
 }
@@ -40,8 +48,18 @@ body {
     align-items: center;
 
     border: #0f1f1c 2px solid;
-    border-radius: 10px;
     background-color: #f6f6f6;
+    border-radius: 10px;
+}
+
+.container-white {
+    border: #0f1f1c 2px solid;
+    background-color: #f6f6f6; 
+}
+
+.container-dark {
+    border: #f4f4f4 2px solid;
+    background-color: #515151;
 }
 
 .info {
